@@ -38,3 +38,8 @@ const calculer = (valeur) => {
     }
   }
 };
+
+window.addEventListener("error", (e) => {
+  alert(e.message);
+  //   console.log(e);
+});
