@@ -17,6 +17,8 @@ body {
   background: grey;
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .ecran {
@@ -36,4 +38,25 @@ body {
   grid-template-columns: repeat(4, 50px);
   grid-template-rows: repeat(5, 50px);
   grid-gap: 7px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button[data-key="8"] {
+  background: red;
+  color: white;
+}
+
+button[data-key="13"] {
+  grid-column: span 2;
+  background: green;
+  color: white;
 }
